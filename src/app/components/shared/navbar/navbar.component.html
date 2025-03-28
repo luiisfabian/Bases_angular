@@ -1,0 +1,22 @@
+<style>
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  nav a.active {
+    color: red;
+  }
+</style>
+
+
+<nav>
+  <a [routerLink]="['']" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:true}">Contador</a>
+  <a routerLink="/hero" routerLinkActive="active">Hero</a>
+
+</nav>
